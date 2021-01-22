@@ -1,0 +1,275 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Hachi Maru Pop', cursive;
+    background-color: #a2D594;
+
+}
+
+.container {
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    z-index: -1;
+
+}
+
+.dialog-box{
+    top: 100px;
+    left: 150px;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: auto;
+    width: 300px;
+    padding: 1em;
+}
+
+.lead {
+    width: 0;
+    height: 0;
+    top: 30px;
+    border-bottom: 20px solid whitesmoke;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+
+.cat {
+    position: relative;
+    top: 150px;
+    left: 50px; 
+}
+
+.face {
+    background-color: #33292b;
+    height: 90px;
+    width: 150px;
+    border-radius: 30px;
+}
+
+.ear-l,.ear-r {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #33292b;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: relative;
+    z-index: -1;
+
+}
+
+.ear-l {
+    bottom: 35px;
+    transform: rotate(-30deg);
+
+}
+
+.ear-r {
+    bottom: 85px;
+    left: 110px;
+    transform: rotate(30deg);
+
+}
+
+.inner-l {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #d36149;
+    border-left: 25px solid transparent;
+    right: 25px;
+    position: relative;
+}
+
+.inner-r {
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #d36149;
+    border-right: 25px solid transparent;
+    position: relative;
+}
+
+.eye-l,.eye-r {
+    background-color: #d2873b;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+.eye-l {
+    bottom: 75px;
+    left:30px;
+}
+
+.eye-r {
+    bottom: 105px;
+    left: 90px;
+
+}
+
+.eyeballs {
+    height: 24px;
+    width: 24px;
+    background-color: #262626;
+    border-radius: 50%;
+    position: relative;
+    top: 3px;
+    left: 3px;
+
+}
+
+.bright {
+    height: 12px;
+    width: 12px;
+    background-color: whitesmoke;
+    position: relative;
+    border-radius: 50%;
+    left: 9px;
+    top: 1px;
+}
+
+.nose {
+    height: 0;
+    width: 0;
+    border-top: 8px solid #d2873b;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: relative;
+    bottom: 110px;
+    left: 68px
+}
+
+.mustache-l, .mustache-r {
+    background-color: #d2873b;
+    height: 8px;
+    width: 1px;
+    position: relative;
+}
+
+.mustache-l {
+    transform: rotate(30deg);
+    right: 2.5px;
+    bottom: 1px;
+}
+.mustache-r {
+    transform: rotate(-30deg);
+    bottom: 9px;
+    left: 1px;
+}
+
+.body-cat {
+    background-color: #33292b;
+    height: 120px;
+    width: 130px;
+    position: relative;
+    border-radius: 0 60px 0 0;
+    left: 35px;
+    bottom: 2px
+}
+
+.paw-l, .paw-r {
+    background-color: #33292b;
+    height: 10px;
+    width: 22px;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+}
+
+.paw-l {
+    top: 120px;
+}
+
+.paw-r {
+    top: 110px;
+    left: 50px;
+}
+
+.tail {
+    background-color: #33292b;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    border-radius: 0 20px 20px 0;
+    top: 40px;
+    left: 80px;
+}
+.shadow {
+    background-color: rgba(8,8,8,0.05);
+    height: 30px;
+    width: 160px;
+    position: relative;
+    border-radius: 50%;
+    bottom: 10px;
+    left: 20px;
+    z-index: -1;
+}
+
+.angry-r, .angry-l {
+    height: 20px;
+    width: 45px;
+    position: relative;
+    background-color:#33292b;
+    -webkit-transition: bottom .5s ease;
+    -moz-transition: bottom .5s ease;
+    -o-transition: bottom .5s ease;
+}
+
+.angry-l{
+    bottom: 125px;
+    left: -11px;
+}
+
+.angry-r{
+    bottom: 105px;
+    left:48px;
+}
+
+/* Animations */
+
+.face:hover .eyeballs{
+    top: 0;
+    left: 0;
+    transition: all 0.2s linear;
+}
+
+.face:hover .ear-l {
+    bottom: 30px;
+    transform: rotate(-33deg);
+    transition: all 0.2s linear;
+
+}
+
+.face:hover .ear-r {
+    bottom: 80px;
+    left: 110px;
+    transform: rotate(33deg);
+    transition: all 0.2s linear;
+
+    
+}
+
+.face:hover .nose {
+    bottom: 105px;
+    transition: all 0.1s linear;
+
+    
+}
+
+ 
+.cat:active .angry-l {
+    bottom: 111px;
+
+}
+
+.cat:active .angry-r {
+    bottom: 91px;
+}
